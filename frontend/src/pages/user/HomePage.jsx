@@ -24,7 +24,7 @@ export default function HomePage() {
             {recs.map((r) => (
               <div key={r.id} className="bg-slate-800 rounded-xl p-3">
                 <p className="font-semibold">{r.train_number} - {r.train_name}</p>
-                <p className="text-sm">{r.source_station} -> {r.destination_station}</p>
+                <p className="text-sm">{r.source_station} {" -> "} {r.destination_station}</p>
               </div>
             ))}
           </div>

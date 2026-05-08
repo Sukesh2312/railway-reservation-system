@@ -25,7 +25,7 @@ export default function PlatformAssignmentDashboard() {
         <div className="space-y-2 max-h-72 overflow-auto">
           {assignments.map((a) => (
             <div className="bg-slate-800 p-2 rounded" key={a.id}>
-              {a.train_number} -> Platform {a.platform_number} ({a.status})
+              {a.train_number} {" -> "} Platform {a.platform_number} ({a.status})
             </div>
           ))}
         </div>
